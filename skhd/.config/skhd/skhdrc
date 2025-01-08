@@ -1,12 +1,12 @@
 # Chaning window focus
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-alt - h : yabai -m window --focus west
-alt - l : yabai -m window --focus east
+alt - n : yabai -m window --focus south
+alt - e : yabai -m window --focus north
+alt - m : yabai -m window --focus west
+alt - o : yabai -m window --focus east
 
 # Change monitor focus
-alt - f : yabai -m display --focus south
-alt - d : yabai -m display --focus north
+alt - t : yabai -m display --focus south
+alt - s : yabai -m display --focus north
 
 # Modifying the layout
 
@@ -33,10 +33,10 @@ shift + alt - e : yabai -m space --balance
 # Moving windows around
 
 # swap windows
-ctrl + alt - j : yabai -m window --warp south
-ctrl + alt - k : yabai -m window --warp north
-ctrl + alt - h : yabai -m window --warp west
-ctrl + alt - l : yabai -m window --warp east
+ctrl + alt - n : yabai -m window --warp south
+ctrl + alt - e : yabai -m window --warp north
+ctrl + alt - m : yabai -m window --warp west
+ctrl + alt - o : yabai -m window --warp east
 
 # move window to display above or below
 shift + alt - d : yabai -m window --display north; yabai -m display --focus north

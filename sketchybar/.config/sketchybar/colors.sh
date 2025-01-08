@@ -1,16 +1,23 @@
 #!/bin/bash
 
 export WHITE=0xffffffff
+export BLACK=0xff000000
 
 # -- Teal Scheme --
-export BAR_COLOR=0xff001f30
-export ITEM_BG_COLOR=0xff003547
-export ACCENT_COLOR=0xff2cf9ed
+#export BAR_COLOR=0xff001f30
+#export ITEM_BG_COLOR=0xff003547
+#export ACCENT_COLOR=0xff2cf9ed
 
 # -- Gray Scheme --
-# export BAR_COLOR=0xff101314
-# export ITEM_BG_COLOR=0xff353c3f
-# export ACCENT_COLOR=0xffffffff
+ export BAR_COLOR=0x00000000
+ export ITEM_BG_COLOR=0xff89dceb
+ export SKY=0xff89dceb
+ export PINK=0xfff5c2e7
+ export LAVENDER=0xffb4befe
+ export PEACH=0xfffab387
+ export YELLOW=0xfff9e2af
+ export GREEN=0xffa6e3a1
+ export RED=0xfff38ba8
 
 # -- Purple Scheme --
 # export BAR_COLOR=0xff140c42
