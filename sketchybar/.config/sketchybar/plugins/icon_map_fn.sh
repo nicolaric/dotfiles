@@ -2,6 +2,9 @@
 
 function icon_map() {
   case "$1" in
+  "Zen Browser")
+    icon_result=":safari:"
+    ;;
   "Keynote" | "Keynote 讲演")
     icon_result=":keynote:"
     ;;

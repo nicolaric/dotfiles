@@ -1,8 +1,9 @@
 #!/bin/bash
 
-if [ "$SENDER" = "space_windows_change" ]; then
-  space="$(echo "$INFO" | jq -r '.space')"
-  apps="$(echo "$INFO" | jq -r '.apps | keys[]')"
+
+SPACE_SIDS=(1 2 3 4 5)
+for sid in "${SPACE_SIDS[@]}"; do
+  apps=$(aerospace list-windows --workspace $sid --json | jq -r '.[]."app-name"')
 
   icon_strip=" "
   if [ "${apps}" != "" ]; then
@@ -14,5 +15,5 @@ if [ "$SENDER" = "space_windows_change" ]; then
     icon_strip=" —"
   fi
 
-  sketchybar --set space.$space label="$icon_strip"
-fi
+  sketchybar --set space.$sid label="$icon_strip"
+done
