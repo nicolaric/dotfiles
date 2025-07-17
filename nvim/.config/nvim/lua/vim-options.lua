@@ -5,6 +5,12 @@ vim.cmd("set shiftwidth=4")
 vim.cmd("set softtabstop=4")
 vim.wo.number = true
 vim.wo.relativenumber = true
+vim.diagnostic.config({
+    virtual_text = true,
+    signs = true,          -- keeps gutter signs
+    underline = true,
+    update_in_insert = false, -- optional: control when diagnostics update
+})
 
 function Map(mode, lhs, rhs, opts)
     local options = { noremap = true, silent = true }
@@ -27,3 +33,7 @@ Map("n", "<C-h>", ":wincmd h<CR>")
 Map("n", "<C-j>", ":wincmd j<CR>")
 Map("n", "<C-k>", ":wincmd k<CR>")
 Map("n", "<C-l>", ":wincmd l<CR>")
+
+-- jump list
+Map("n", "<leader>o", "<C-o>")
+Map("n", "<leader>i", "<C-i>")

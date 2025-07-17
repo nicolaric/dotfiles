@@ -23,12 +23,13 @@ sketchybar --bar height=37        \
                  sticky=off       \
                  padding_left=10  \
                  padding_right=10 \
-                 color=$BAR_COLOR
+                 color=$BAR_COLOR \
 
 ##### Changing Defaults #####
 # We now change some default values that are applied to all further items
 # For a full list of all available item properties see:
 # https://felixkratz.github.io/SketchyBar/config/items
+sketchybar --add event aerospace_workspace_change
 
 sketchybar --default icon.font="SF Pro:Semibold:15.0"  \
                      icon.color=$BLACK                 \
@@ -42,7 +43,8 @@ sketchybar --default icon.font="SF Pro:Semibold:15.0"  \
                      label.padding_left=4                  \
                      label.padding_right=10                \
                      icon.padding_left=10                  \
-                     icon.padding_right=4
+                     icon.padding_right=4                  \
+             --subscribe aerospace_workspace_change front_app_switched space_windows_change
 
 # -- Left Side Items --
 source $ITEM_DIR/spaces.sh

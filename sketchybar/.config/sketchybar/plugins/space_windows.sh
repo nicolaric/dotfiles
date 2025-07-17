@@ -1,7 +1,8 @@
 #!/bin/bash
 
+source "$CONFIG_DIR/plugins/icon_map.sh"
 
-SPACE_SIDS=(1 2 3 4 5)
+SPACE_SIDS=(1 2 3 4 5 6 7)
 for sid in "${SPACE_SIDS[@]}"; do
   apps=$(aerospace list-windows --workspace $sid --json | jq -r '.[]."app-name"')
 
@@ -9,7 +10,8 @@ for sid in "${SPACE_SIDS[@]}"; do
   if [ "${apps}" != "" ]; then
     while read -r app
     do
-      icon_strip+=" $($CONFIG_DIR/plugins/icon_map_fn.sh "$app")"
+      __icon_map "${app}"
+      icon_strip+=" ${icon_result}"
     done <<< "${apps}"
   else
     icon_strip=" —"

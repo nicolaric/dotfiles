@@ -15,6 +15,9 @@ return {
 					hide_dotfiles = false,
 				},
 			},
+			mappings = {
+				["<C-m>"] = "none", -- Unmap <C-m> in neo-tree
+			},
 		})
 	end,
 }
