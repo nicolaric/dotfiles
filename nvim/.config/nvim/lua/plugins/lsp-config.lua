@@ -77,6 +77,7 @@ return {
             vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
             vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
             vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+            vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, {})
             vim.keymap.set("n", "<leader>cto", ":TSOrganizeImports<CR>", {})
             vim.keymap.set("n", "<leader>cta", ":TSAddMissingImports<CR>", {})
         end,

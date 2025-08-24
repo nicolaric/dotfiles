@@ -13,7 +13,7 @@ do
         fi
         sid=$i
         sketchybar --add item space.$sid left                   \
-            --subscribe .$sid aerospace_workspace_change        \
+            --subscribe space.$sid aerospace_workspace_change        \
             --set space.$sid                                    \
                   background.corner_radius=5                    \
                   background.drawing=on                         \
@@ -23,8 +23,8 @@ do
                   label.y_offset=-1                             \
                   icon=$sid                                     \
                   display=$m                                    \
-                  click_script="aerospace workspace $i"       \
-                  script="$CONFIG_DIR/plugins/aerospace.sh $i"
+                  click_script="aerospace workspace $i"         \
+                  debug script="$CONFIG_DIR/plugins/aerospace.sh $i"
     done
 done
 
