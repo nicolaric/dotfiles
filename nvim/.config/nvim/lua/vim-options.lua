@@ -6,18 +6,18 @@ vim.cmd("set softtabstop=4")
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.diagnostic.config({
-    virtual_text = true,
-    signs = true,          -- keeps gutter signs
-    underline = true,
-    update_in_insert = false, -- optional: control when diagnostics update
+	virtual_text = true,
+	signs = true, -- keeps gutter signs
+	underline = true,
+	update_in_insert = false, -- optional: control when diagnostics update
 })
 
 function Map(mode, lhs, rhs, opts)
-    local options = { noremap = true, silent = true }
-    if opts then
-        options = vim.tbl_extend("force", options, opts)
-    end
-    vim.keymap.set(mode, lhs, rhs, options)
+	local options = { noremap = true, silent = true }
+	if opts then
+		options = vim.tbl_extend("force", options, opts)
+	end
+	vim.keymap.set(mode, lhs, rhs, options)
 end
 
 -- window movement
@@ -43,3 +43,4 @@ vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
 vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, {})
+vim.keymap.set("n", "<leader>cto", ":TSOrganizeImports<CR>", { noremap = true, silent = true })

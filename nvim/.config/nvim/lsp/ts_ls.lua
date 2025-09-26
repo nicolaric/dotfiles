@@ -54,21 +54,13 @@ return {
 		"typescript.tsx",
 	},
 	root_dir = function(bufnr, on_dir)
-		-- The project root is where the LSP can be started from
-		-- As stated in the documentation above, this LSP supports monorepos and simple projects.
-		-- We select then from the project root, which is identified by the presence of a package
-		-- manager lock file.
 		local root_markers = { "package-lock.json", "yarn.lock", "pnpm-lock.yaml", "bun.lockb", "bun.lock" }
-		-- Give the root markers equal priority by wrapping them in a table
 		root_markers = vim.fn.has("nvim-0.11.3") == 1 and { root_markers, { ".git" } }
 			or vim.list_extend(root_markers, { ".git" })
-		-- We fallback to the current working directory if no project root is found
 		local project_root = vim.fs.root(bufnr, root_markers) or vim.fn.getcwd()
-
 		on_dir(project_root)
 	end,
 	handlers = {
-		-- handle rename request for certain code actions like extracting functions / types
 		["_typescript.rename"] = function(_, result, ctx)
 			local client = assert(vim.lsp.get_client_by_id(ctx.client_id))
 			vim.lsp.util.show_document({
@@ -82,57 +74,61 @@ return {
 			return vim.NIL
 		end,
 	},
-	commands = {
-		["editor.action.showReferences"] = function(command, ctx)
-			local client = assert(vim.lsp.get_client_by_id(ctx.client_id))
-			local file_uri, position, references = unpack(command.arguments)
-
-			local quickfix_items = vim.lsp.util.locations_to_items(references, client.offset_encoding)
-			vim.fn.setqflist({}, " ", {
-				title = command.title,
-				items = quickfix_items,
-				context = {
-					command = command,
-					bufnr = ctx.bufnr,
-				},
-			})
-
-			vim.lsp.util.show_document({
-				uri = file_uri,
-				range = {
-					start = position,
-					["end"] = position,
-				},
-			}, client.offset_encoding)
-
-			vim.cmd("botright copen")
-		end,
-		TSOrganizeImports = {
-			function()
-				return ts_lsp_command("_typescript.organizeImports")
-			end,
-			description = "Organize Imports",
-		},
-		TSAddMissingImports = {
-			function()
-				return ts_lsp_command("_typescript.addMissingImports")
-			end,
-			description = "Add Missing Imports",
-		},
-	},
 	on_attach = function(client, bufnr)
-		-- ts_ls provides `source.*` code actions that apply to the whole file. These only appear in
-		-- `vim.lsp.buf.code_action()` if specified in `context.only`.
+		-- Register TSOrganizeImports command
+		vim.api.nvim_buf_create_user_command(bufnr, "TSOrganizeImports", function()
+			vim.lsp.buf.code_action({
+				context = {
+					only = { "source.organizeImports" },
+				},
+				apply = true,
+			})
+		end, { desc = "Organize Imports" })
+
+		-- Register TSAddMissingImports command
+		vim.api.nvim_buf_create_user_command(bufnr, "TSAddMissingImports", function()
+			vim.lsp.buf.code_action({
+				context = {
+					only = { "source.addMissingImports" },
+				},
+				apply = true,
+			})
+		end, { desc = "Add Missing Imports" })
+
+		vim.api.nvim_buf_create_user_command(bufnr, "TSRemoveUnusedImports", function()
+			vim.lsp.buf.code_action({
+				context = {
+					only = { "source.removeUnusedImports" },
+				},
+				apply = true,
+			})
+		end, { desc = "Remove Unused Imports" })
+
+		-- Register LspTypescriptSourceAction command
 		vim.api.nvim_buf_create_user_command(bufnr, "LspTypescriptSourceAction", function()
 			local source_actions = vim.tbl_filter(function(action)
 				return vim.startswith(action, "source.")
 			end, client.server_capabilities.codeActionProvider.codeActionKinds)
-
 			vim.lsp.buf.code_action({
 				context = {
 					only = source_actions,
 				},
 			})
-		end, {})
+		end, { desc = "Show TypeScript source actions" })
+
+		vim.api.nvim_buf_set_keymap(
+			bufnr,
+			"n",
+			"<leader>cto",
+			"<cmd>TSOrganizeImports<CR><cmd>TSRemoveUnusedImports<CR>",
+			{ noremap = true, silent = true, desc = "Organize TypeScript imports" }
+		)
+		vim.api.nvim_buf_set_keymap(
+			bufnr,
+			"n",
+			"<leader>cta",
+			"<cmd>TSAddMissingImports<CR>",
+			{ noremap = true, silent = true, desc = "Add missing TypeScript imports" }
+		)
 	end,
 }
