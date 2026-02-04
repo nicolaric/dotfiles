@@ -31,7 +31,7 @@ sketchybar --bar height=37        \
 # https://felixkratz.github.io/SketchyBar/config/items
 sketchybar --add event aerospace_workspace_change
 
-sketchybar --default icon.font="SF Pro:Semibold:15.0"  \
+sketchybar --default icon.font="Hack Nerd Font Mono:Semibold:15.0"  \
                      icon.color=$BLACK                 \
                      label.font="SF Pro:Semibold:15.0" \
                      label.color=$BLACK                \
@@ -57,6 +57,7 @@ source $ITEM_DIR/calendar.sh
 source $ITEM_DIR/volume.sh
 source $ITEM_DIR/battery.sh
 source $ITEM_DIR/cpu.sh
+source $ITEM_DIR/ram.sh
 
 
 ##### Finalizing Setup #####

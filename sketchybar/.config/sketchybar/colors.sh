@@ -18,6 +18,7 @@ export BLACK=0xff000000
  export YELLOW=0xfff9e2af
  export GREEN=0xffa6e3a1
  export RED=0xfff38ba8
+ export SURFACE1=0xff1e1e2e
 
 # -- Purple Scheme --
 # export BAR_COLOR=0xff140c42

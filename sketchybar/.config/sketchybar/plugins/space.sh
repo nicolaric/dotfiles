@@ -8,12 +8,12 @@ source "$CONFIG_DIR/colors.sh" # Loads all defined colors
 
 if [ $SELECTED = true ]; then
   sketchybar --set $NAME background.drawing=on \
-                         background.color=$PINK \
+                         background.color=$LAVENDER \
                          label.color=$BLACK \
                          icon.color=$BLACK
 else
   sketchybar --set $NAME background.drawing=on \
-                         background.color=$SKY \
-                         label.color=$BLACK \
-                         icon.color=$BLACK
+                         background.color=$SURFACE1 \
+                         label.color=$WHITE \
+                         icon.color=$WHITE
 fi

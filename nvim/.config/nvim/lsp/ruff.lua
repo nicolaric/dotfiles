@@ -12,19 +12,20 @@ return {
 		on_dir(project_root)
 	end,
 	on_attach = function(client, bufnr)
-		vim.api.nvim_buf_set_keymap(
-			bufnr,
+		local opts = { noremap = true, silent = true, buffer = bufnr }
+
+		vim.keymap.set(
 			"n",
 			"<leader>cro",
 			"<cmd>RuffOrganizeImports<CR>",
-			{ noremap = true, silent = true, desc = "Ruff: Organize Imports" }
+			vim.tbl_extend("force", opts, { desc = "Ruff: Organize Imports" })
 		)
-		vim.api.nvim_buf_set_keymap(
-			bufnr,
+
+		vim.keymap.set(
 			"n",
 			"<leader>crl",
 			vim.lsp.codelens.run,
-			{ noremap = true, silent = true, desc = "Ruff: Run CodeLens" }
+			vim.tbl_extend("force", opts, { desc = "Ruff: Run CodeLens" })
 		)
 	end,
 }

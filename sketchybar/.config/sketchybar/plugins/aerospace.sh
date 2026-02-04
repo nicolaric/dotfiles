@@ -8,12 +8,12 @@ FOCUSED_WORKSPACE=$(aerospace list-workspaces --focused | awk '{print $1}')
 # $1 is the workspace ID passed to the script (from your main config)
 if [ "$1" = "$FOCUSED_WORKSPACE" ]; then
     sketchybar --set "$NAME" background.drawing=on \
-                     background.color="$PINK" \
+                     background.color="$LAVENDER" \
                      label.color="$BLACK" \
                      icon.color="$BLACK"
 else
     sketchybar --set "$NAME" background.drawing=on \
-                     background.color="$SKY" \
-                     label.color="$BLACK" \
-                     icon.color="$BLACK"
+                     background.color="$SURFACE1" \
+                     label.color="$WHITE" \
+                     icon.color="$WHITE"
 fi
