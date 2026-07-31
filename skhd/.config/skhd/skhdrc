@@ -1,3 +1,6 @@
+# Open apps / sites
+alt - x : ~/.config/skhd/open-x-current-display.sh
+
 # Chaning window focus
 alt - n : yabai -m window --focus south
 alt - e : yabai -m window --focus north
