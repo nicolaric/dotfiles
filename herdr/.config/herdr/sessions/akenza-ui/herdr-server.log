@@ -1,0 +1,28 @@
+2026-07-27T20:35:38.972955Z  INFO herdr::api::server: api server listening path=/Users/nicolarichli/.config/herdr/sessions/akenza-ui/herdr.sock
+2026-07-27T20:35:38.973803Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-07-27T20:35:39.039441Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T20:35:39.174452Z  INFO herdr::server::headless: client protocol socket listening path=/Users/nicolarichli/.config/herdr/sessions/akenza-ui/herdr-client.sock
+2026-07-27T20:35:39.174570Z  INFO herdr::server::headless: herdr server started api_socket=/Users/nicolarichli/.config/herdr/sessions/akenza-ui/herdr.sock client_socket=/Users/nicolarichli/.config/herdr/sessions/akenza-ui/herdr-client.sock
+2026-07-27T20:35:39.174684Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=93613
+2026-07-27T20:35:39.570911Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:workspace:create" method="workspace.create" changes_ui=true
+2026-07-27T20:35:39.571132Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-27T20:35:39.575545Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=93764
+2026-07-27T20:35:39.579529Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w1" pane_id=1
+2026-07-27T20:35:39.579565Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-27T20:35:39.579614Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-27T20:35:39.579626Z  INFO herdr::logging: workspace renamed event="workspace.rename" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-27T20:35:39.589221Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:workspace:create" method="workspace.create"
+2026-07-27T20:35:39.774667Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-07-27T20:35:39.775194Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-27T20:35:39.777928Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-07-27T20:35:39.977152Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:create" method="tab.create" changes_ui=true
+2026-07-27T20:35:39.977311Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=23 cols=54 scrollback_limit_bytes=10000000
+2026-07-27T20:35:39.982406Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=93866
+2026-07-27T20:35:39.982619Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-27T20:35:39.986860Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:create" method="tab.create"
+2026-07-27T20:35:40.148954Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:create" method="tab.create" changes_ui=true
+2026-07-27T20:35:40.149101Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=23 cols=54 scrollback_limit_bytes=10000000
+2026-07-27T20:35:40.153117Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=93902
+2026-07-27T20:35:40.153331Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-27T20:35:40.167717Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:create" method="tab.create"
+2026-07-27T20:35:45.163680Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/nicolarichli/.config/herdr/sessions/akenza-ui/session.json workspaces=1
