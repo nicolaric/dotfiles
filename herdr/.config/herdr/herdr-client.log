@@ -61,3 +61,23 @@
 2026-07-31T10:40:01.458955Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=66139
 2026-07-31T10:40:01.459011Z  INFO herdr::client: connecting to server path=/Users/nicolarichli/.config/herdr/herdr-client.sock
 2026-07-31T10:40:01.470449Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T10:43:45.176803Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=66139
+2026-07-31T10:44:09.347866Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=71254
+2026-07-31T10:44:09.348335Z  INFO herdr::client: connecting to server path=/var/folders/n4/crtdn71j34q8vdblf4r_r0fc0000gn/T/herdr-remote-71175-nicola-ser01-default.sock
+2026-07-31T10:44:09.480835Z  INFO herdr::client: handshake succeeded version=17 encoding=TerminalAnsi
+2026-07-31T10:46:03.521738Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=71254
+2026-07-31T10:47:29.529757Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=74731
+2026-07-31T10:47:29.529816Z  INFO herdr::client: connecting to server path=/Users/nicolarichli/.config/herdr/herdr-client.sock
+2026-07-31T10:47:29.643606Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T10:51:27.001468Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=74731
+2026-07-31T10:51:31.069697Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=79520
+2026-07-31T10:51:31.069805Z  INFO herdr::client: connecting to server path=/var/folders/n4/crtdn71j34q8vdblf4r_r0fc0000gn/T/herdr-remote-79441-nicola-ser01-default.sock
+2026-07-31T10:51:31.622971Z  INFO herdr::client: handshake succeeded version=17 encoding=TerminalAnsi
+2026-07-31T10:54:37.076093Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=79520
+2026-07-31T11:06:00.854694Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=94420
+2026-07-31T11:06:00.854806Z  INFO herdr::client: connecting to server path=/var/folders/n4/crtdn71j34q8vdblf4r_r0fc0000gn/T/herdr-remote-94340-nicola-ser01-default.sock
+2026-07-31T11:06:00.980958Z  INFO herdr::client: handshake succeeded version=17 encoding=TerminalAnsi
+2026-07-31T11:09:11.913533Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=94420
+2026-07-31T11:09:14.088958Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=98002
+2026-07-31T11:09:14.089037Z  INFO herdr::client: connecting to server path=/Users/nicolarichli/.config/herdr/herdr-client.sock
+2026-07-31T11:09:14.244980Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame

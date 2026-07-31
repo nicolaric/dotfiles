@@ -6574,3 +6574,25 @@
 2026-07-31T10:40:03.578477Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
 2026-07-31T10:40:04.778116Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t3"
 2026-07-31T10:40:09.804974Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/nicolarichli/.config/herdr/session.json workspaces=4
+2026-07-31T10:43:45.175429Z  INFO herdr::server::headless: client detach requested via keybind client_id=14
+2026-07-31T10:43:45.180849Z  INFO herdr::server::headless: client disconnected client_id=14
+2026-07-31T10:47:29.643613Z  INFO herdr::server::headless: client connected client_id=16 cols=175 rows=51 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-31T10:47:31.851862Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-07-31T10:47:32.997046Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t3"
+2026-07-31T10:47:38.021018Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/nicolarichli/.config/herdr/session.json workspaces=4
+2026-07-31T10:49:57.271884Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-31T10:51:15.431049Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-07-31T10:51:20.443902Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/nicolarichli/.config/herdr/session.json workspaces=4
+2026-07-31T10:51:23.176084Z  INFO herdr::pane: agent changed pane=4 previous_agent=Some(Claude) agent=None pgid=Some(99641)
+2026-07-31T10:51:25.012797Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 1, signal: None }"
+2026-07-31T10:51:25.030674Z  INFO herdr::pane: pane session terminated pane=4 pid=99641 signal=Hangup
+2026-07-31T10:51:25.035938Z  WARN herdr::app::actions: PaneDied for unknown pane pane=4
+2026-07-31T10:51:27.000299Z  INFO herdr::server::headless: client detach requested via keybind client_id=16
+2026-07-31T10:51:27.005345Z  INFO herdr::server::headless: client disconnected client_id=16
+2026-07-31T10:51:30.041975Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/nicolarichli/.config/herdr/session.json workspaces=4
+2026-07-31T11:03:23.678504Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:server:reload-config" method="server.reload_config" changes_ui=true
+2026-07-31T11:03:23.681890Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:server:reload-config" method="server.reload_config"
+2026-07-31T11:09:14.244972Z  INFO herdr::server::headless: client connected client_id=18 cols=175 rows=51 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-31T11:09:15.543222Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t8"
+2026-07-31T11:09:16.230252Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t3"
+2026-07-31T11:09:21.248049Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/nicolarichli/.config/herdr/session.json workspaces=4

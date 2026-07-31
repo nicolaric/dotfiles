@@ -1,1 +1,61 @@
-../../dotfiles/herdr/.config/herdr/config.toml
+onboarding = false
+# herdr configuration
+# Keybindings ported from ~/.tmux.conf
+
+[theme]
+# tmux: set -g @plugin 'catppuccin/tmux' (@catppuccin_flavor "mocha")
+name = "catppuccin"
+# Follow the host terminal's light/dark appearance.
+auto_switch = false
+dark_name = "catppuccin"          # mocha
+light_name = "catppuccin-latte"
+
+[keys]
+# tmux: set -g prefix C-s
+prefix = "ctrl+a"
+
+# tmux: christoomey/vim-tmux-navigator — move between panes with ctrl+h/j/k/l,
+# no prefix needed. (tmux also had prefix h/j/k/l via bind-key select-pane.)
+focus_pane_left = "ctrl+h"
+focus_pane_down = "ctrl+j"
+focus_pane_up = "ctrl+k"
+focus_pane_right = "ctrl+l"
+
+# tmux: bind % split-window -h  (side-by-side panes, vertical divider)
+split_vertical = "prefix+%"
+# tmux: bind '"' split-window -v  (stacked panes, horizontal divider)
+split_horizontal = 'prefix+"'
+# tmux: bind c new-window
+new_tab = "prefix+c"
+
+# Use prefix+s for session management (session navigator) instead of the default prefix+g.
+goto = "prefix+s"
+
+# Worktree management (fills in the unset commands from the keybinds help screen)
+open_worktree = "prefix+shift+o"
+remove_worktree = "prefix+shift+k"
+
+# Workspace navigation (prefix+shift+1..9 switches to workspace 1-9)
+previous_workspace = "prefix+("
+next_workspace = "prefix+)"
+switch_workspace = "prefix+shift+1..9"
+
+# Agent navigation (prefix+alt+1..9 focuses agent 1-9)
+previous_agent = "prefix+["
+next_agent = "prefix+]"
+focus_agent = "prefix+alt+1..9"
+
+# Open an interactive terminal in a session-modal popup.
+[[keys.command]]
+key = "prefix+g"
+type = "popup"
+command = "exec ${SHELL:-/bin/sh}"
+width = "80%"
+height = "80%"
+
+# Notes on non-binding tmux settings (already herdr defaults, no config needed):
+#   set -g mouse on                -> [ui] mouse_capture = true (default)
+#   set-window-option mode-keys vi -> navigate mode uses h/j/k/l by default
+
+[experimental]
+switch_ascii_input_source_in_prefix = false
