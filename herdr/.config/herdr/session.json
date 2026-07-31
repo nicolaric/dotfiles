@@ -6,19 +6,21 @@
       "custom_name": "akenza-ui",
       "identity_cwd": "/Users/nicolarichli/projects/akenza-ui",
       "public_pane_numbers": {
-        "7": 3,
-        "5": 2,
-        "9": 4,
-        "1": 1
+        "3": 9,
+        "4": 10,
+        "1": 1,
+        "2": 3,
+        "5": 11
       },
-      "next_public_pane_number": 7,
+      "next_public_pane_number": 12,
       "public_tab_numbers": [
         1,
-        2,
         3,
-        4
+        5,
+        6,
+        7
       ],
-      "next_public_tab_number": 5,
+      "next_public_tab_number": 8,
       "tabs": [
         {
           "custom_name": "lazygit",
@@ -27,13 +29,7 @@
           },
           "panes": {
             "1": {
-              "cwd": "/Users/nicolarichli/projects/akenza-ui",
-              "agent_session": {
-                "source": "herdr:claude",
-                "agent": "claude",
-                "kind": "id",
-                "value": "18c49b5c-62af-4fdc-bdc0-96580b0075bb"
-              }
+              "cwd": "/Users/nicolarichli/projects/akenza-ui"
             }
           },
           "zoomed": false,
@@ -43,54 +39,74 @@
         {
           "custom_name": null,
           "layout": {
+            "Pane": 2
+          },
+          "panes": {
+            "2": {
+              "cwd": "/Users/nicolarichli/projects/akenza-ui",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "09e7f40f-b078-4ee2-b818-2a11faac0685"
+              }
+            }
+          },
+          "zoomed": false,
+          "focused": 2,
+          "root_pane": 2
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 3
+          },
+          "panes": {
+            "3": {
+              "cwd": "/Users/nicolarichli/projects/akenza-ui"
+            }
+          },
+          "zoomed": false,
+          "focused": 3,
+          "root_pane": 3
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 4
+          },
+          "panes": {
+            "4": {
+              "cwd": "/Users/nicolarichli"
+            }
+          },
+          "zoomed": false,
+          "focused": 4,
+          "root_pane": 4
+        },
+        {
+          "custom_name": null,
+          "layout": {
             "Pane": 5
           },
           "panes": {
             "5": {
-              "cwd": "/Users/nicolarichli/projects/akenza-ui"
+              "cwd": "/Users/nicolarichli"
             }
           },
           "zoomed": false,
           "focused": 5,
           "root_pane": 5
-        },
-        {
-          "custom_name": null,
-          "layout": {
-            "Pane": 7
-          },
-          "panes": {
-            "7": {
-              "cwd": "/Users/nicolarichli/projects/akenza-ui"
-            }
-          },
-          "zoomed": false,
-          "focused": 7,
-          "root_pane": 7
-        },
-        {
-          "custom_name": null,
-          "layout": {
-            "Pane": 9
-          },
-          "panes": {
-            "9": {
-              "cwd": "/Users/nicolarichli/dotfiles/herdr/.config/herdr"
-            }
-          },
-          "zoomed": false,
-          "focused": 9,
-          "root_pane": 9
         }
       ],
-      "active_tab": 2
+      "active_tab": 1
     },
     {
       "id": "w2",
       "custom_name": "login",
       "identity_cwd": "/Users/nicolarichli/projects/helm-keycloak",
       "public_pane_numbers": {
-        "2": 1
+        "6": 1
       },
       "next_public_pane_number": 2,
       "public_tab_numbers": [
@@ -101,16 +117,16 @@
         {
           "custom_name": "lazygit",
           "layout": {
-            "Pane": 2
+            "Pane": 6
           },
           "panes": {
-            "2": {
+            "6": {
               "cwd": "/Users/nicolarichli/projects/helm-keycloak"
             }
           },
           "zoomed": false,
-          "focused": 2,
-          "root_pane": 2
+          "focused": 6,
+          "root_pane": 6
         }
       ],
       "active_tab": 0
@@ -120,7 +136,7 @@
       "custom_name": "config",
       "identity_cwd": "/Users/nicolarichli",
       "public_pane_numbers": {
-        "3": 1
+        "7": 1
       },
       "next_public_pane_number": 2,
       "public_tab_numbers": [
@@ -131,16 +147,16 @@
         {
           "custom_name": "sketchybar",
           "layout": {
-            "Pane": 3
+            "Pane": 7
           },
           "panes": {
-            "3": {
+            "7": {
               "cwd": "/Users/nicolarichli"
             }
           },
           "zoomed": false,
-          "focused": 3,
-          "root_pane": 3
+          "focused": 7,
+          "root_pane": 7
         }
       ],
       "active_tab": 0
@@ -150,54 +166,36 @@
       "custom_name": "notes",
       "identity_cwd": "/Users/nicolarichli/projects/project-eos",
       "public_pane_numbers": {
-        "6": 2,
-        "8": 3,
-        "10": 4,
-        "11": 5,
-        "12": 6,
-        "13": 7,
-        "14": 8
+        "11": 15,
+        "10": 14,
+        "12": 16,
+        "8": 11,
+        "9": 13
       },
-      "next_public_pane_number": 9,
+      "next_public_pane_number": 18,
       "public_tab_numbers": [
-        2,
-        3,
-        4,
-        8,
-        7,
-        5,
-        6
+        11,
+        12,
+        13,
+        14,
+        15
       ],
-      "next_public_tab_number": 9,
+      "next_public_tab_number": 16,
       "tabs": [
         {
           "custom_name": null,
-          "layout": {
-            "Pane": 6
-          },
-          "panes": {
-            "6": {
-              "cwd": "/Users/nicolarichli/projects/project-eos",
-              "agent_session": {
-                "source": "herdr:pi",
-                "agent": "pi",
-                "kind": "path",
-                "value": "/Users/nicolarichli/.pi/agent/sessions/--Users-nicolarichli-projects-project-eos--/2026-07-31T08-54-46-035Z_019fb762-1413-7529-9e4f-3489cd60b0b0.jsonl"
-              }
-            }
-          },
-          "zoomed": false,
-          "focused": 6,
-          "root_pane": 6
-        },
-        {
-          "custom_name": "jj",
           "layout": {
             "Pane": 8
           },
           "panes": {
             "8": {
-              "cwd": "/Users/nicolarichli/dotfiles"
+              "cwd": "/Users/nicolarichli/projects/project-eos",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "e2bf73be-a1a2-410e-ad27-4c2546b9a3d9"
+              }
             }
           },
           "zoomed": false,
@@ -205,13 +203,33 @@
           "root_pane": 8
         },
         {
-          "custom_name": "heyela-backend",
+          "custom_name": null,
+          "layout": {
+            "Pane": 9
+          },
+          "panes": {
+            "9": {
+              "cwd": "/Users/nicolarichli/projects/project-eos",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "062b2f22-eac7-48f0-aeb5-bcf6218e00f8"
+              }
+            }
+          },
+          "zoomed": false,
+          "focused": 9,
+          "root_pane": 9
+        },
+        {
+          "custom_name": null,
           "layout": {
             "Pane": 10
           },
           "panes": {
             "10": {
-              "cwd": "/Users/nicolarichli/projects/heyela/hey-ela-backend/src"
+              "cwd": "/Users/nicolarichli/projects/yeos-videos"
             }
           },
           "zoomed": false,
@@ -219,47 +237,19 @@
           "root_pane": 10
         },
         {
-          "custom_name": "heyela-backend",
-          "layout": {
-            "Pane": 14
-          },
-          "panes": {
-            "14": {
-              "cwd": "/Users/nicolarichli/projects/heyela/hey-ela-backend"
-            }
-          },
-          "zoomed": false,
-          "focused": 14,
-          "root_pane": 14
-        },
-        {
-          "custom_name": "heyela-backend-pi",
-          "layout": {
-            "Pane": 13
-          },
-          "panes": {
-            "13": {
-              "cwd": "/Users/nicolarichli/projects/heyela/hey-ela-backend",
-              "agent_session": {
-                "source": "herdr:pi",
-                "agent": "pi",
-                "kind": "path",
-                "value": "/Users/nicolarichli/.pi/agent/sessions/--Users-nicolarichli-projects-heyela-hey-ela-backend--/2026-07-29T09-37-48-839Z_019fad3c-c526-7918-83f6-209467f7a9c6.jsonl"
-              }
-            }
-          },
-          "zoomed": false,
-          "focused": 13,
-          "root_pane": 13
-        },
-        {
-          "custom_name": "heyela-fe",
+          "custom_name": null,
           "layout": {
             "Pane": 11
           },
           "panes": {
             "11": {
-              "cwd": "/Users/nicolarichli/projects/heyela/hey-ela-frontend"
+              "cwd": "/Users/nicolarichli/projects/heyela/hey-ela-backend",
+              "agent_session": {
+                "source": "herdr:pi",
+                "agent": "pi",
+                "kind": "path",
+                "value": "/Users/nicolarichli/.pi/agent/sessions/--Users-nicolarichli-projects-heyela-hey-ela-backend--/2026-10-10T10-35-17-854Z_01a12561-a1d4-7461-93e7-aa730c88f0f7.jsonl"
+              }
             }
           },
           "zoomed": false,
@@ -267,19 +257,13 @@
           "root_pane": 11
         },
         {
-          "custom_name": "heyela-fe-pi",
+          "custom_name": null,
           "layout": {
             "Pane": 12
           },
           "panes": {
             "12": {
-              "cwd": "/Users/nicolarichli/projects/heyela/hey-ela-frontend",
-              "agent_session": {
-                "source": "herdr:pi",
-                "agent": "pi",
-                "kind": "path",
-                "value": "/Users/nicolarichli/.pi/agent/sessions/--Users-nicolarichli-projects-heyela-hey-ela-frontend--/2026-07-28T10-00-36-202Z_019fa82b-466a-79aa-ad8d-4f8b4e0e94c7.jsonl"
-              }
+              "cwd": "/Users/nicolarichli/.config"
             }
           },
           "zoomed": false,
@@ -287,7 +271,7 @@
           "root_pane": 12
         }
       ],
-      "active_tab": 1
+      "active_tab": 4
     }
   ],
   "active": 3,

@@ -63,3 +63,4 @@ source <(carapace _carapace)
 carapace source kubectl
 
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+export PATH="$HOME/.omlx/bin:$PATH"
